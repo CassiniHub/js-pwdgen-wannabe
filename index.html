@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Exercise</title>
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: lightblue;
+      }
+      .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row">
+      <h1 id="userDetails">Hello World</h1>
+    </div>
+
+    <script>
+      var name = prompt('Qual\'è il tuo nome?');
+      var surname = prompt('Qual\'è il tuo cognome?');
+      var favouriteColor = prompt('Qual\'è il tuo colore preferito?');
+
+      document.getElementById('userDetails').innerHTML = name + surname + favouriteColor + '19';
+      console.log(name, surname, favouriteColor);
+    </script>
+  </body>
+</html>
